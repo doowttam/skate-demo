@@ -2,12 +2,6 @@ class window.SantaGame
   constructor: (@doc, @win) ->
     @canvas  = @doc.getElementById 'game_canvas'
     @context = @canvas.getContext '2d'
-    @buttons =
-      start: @doc.getElementById 'start'
-      pause: @doc.getElementById 'pause'
-
-    @buttons.start.onclick = @play
-    @buttons.pause.onclick = @pause
 
     @key = new Key
     @win.onkeyup = (e) =>

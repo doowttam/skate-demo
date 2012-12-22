@@ -14,12 +14,6 @@
       this.drawFrame = __bind(this.drawFrame, this);
       this.canvas = this.doc.getElementById('game_canvas');
       this.context = this.canvas.getContext('2d');
-      this.buttons = {
-        start: this.doc.getElementById('start'),
-        pause: this.doc.getElementById('pause')
-      };
-      this.buttons.start.onclick = this.play;
-      this.buttons.pause.onclick = this.pause;
       this.key = new Key;
       this.win.onkeyup = function(e) {
         return _this.key.onKeyUp(e);
